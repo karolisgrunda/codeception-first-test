@@ -8,5 +8,5 @@ actor: AcceptanceTester
 modules:
     enabled:
         - PhpBrowser:
-            url: http://localhost/myapp
-        - \Helper\Acceptance
+            url: https://bank.paysera.com
+            browser: chrome
