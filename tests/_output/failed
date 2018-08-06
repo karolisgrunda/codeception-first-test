@@ -1,0 +1,2 @@
+tests\acceptance\LoginCest.php:unsuccessLoginTest
+tests\acceptance\PageLinksCest.php:homePageLinkTest

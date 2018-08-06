@@ -7,6 +7,9 @@
 actor: AcceptanceTester
 modules:
     enabled:
-        - PhpBrowser:
-            url: https://bank.paysera.com
+        - WebDriver:
             browser: chrome
+            url: 'https://bank.paysera.com'
+            wait: 5
+        - \Helper\Acceptance
+

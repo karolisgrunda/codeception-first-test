@@ -1,0 +1,284 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ng="http://angularjs.org" id="ng-app" data-ng-strict-di="" data-ng-app-name="paysera" data-user-settings="{&quot;user_id&quot;:null,&quot;administer_user_id&quot;:null,&quot;time_zone&quot;:&quot;Europe\/Vilnius&quot;,&quot;time_format&quot;:&quot;H:i:s&quot;,&quot;date_format&quot;:&quot;YYYY-MM-DD&quot;,&quot;min_password_length&quot;:8,&quot;user_identifier&quot;:&quot;&quot;,&quot;administered_user_identifier&quot;:&quot;&quot;,&quot;user_type&quot;:null,&quot;administered_user_type&quot;:null,&quot;csrf_token&quot;:&quot;57e57661ce4145b6340e10b4cba1c3a07ea5a5c3&quot;,&quot;session_box&quot;:{&quot;autoRefresh&quot;:false,&quot;refreshDuration&quot;:300,&quot;inactiveDuration&quot;:600,&quot;logoutLeftDuration&quot;:300},&quot;paysera-feature-flag&quot;:null}" lang="lt" class="csstransitions localstorage sessionstorage filereader ng-scope"><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top &gt; .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom &gt; .tooltip-arrow,[uib-popover-popup].popover.top-left &gt; .arrow,[uib-popover-popup].popover.top-right &gt; .arrow,[uib-popover-popup].popover.bottom-left &gt; .arrow,[uib-popover-popup].popover.bottom-right &gt; .arrow,[uib-popover-popup].popover.left-top &gt; .arrow,[uib-popover-popup].popover.left-bottom &gt; .arrow,[uib-popover-popup].popover.right-top &gt; .arrow,[uib-popover-popup].popover.right-bottom &gt; .arrow,[uib-popover-html-popup].popover.top-left &gt; .arrow,[uib-popover-html-popup].popover.top-right &gt; .arrow,[uib-popover-html-popup].popover.bottom-left &gt; .arrow,[uib-popover-html-popup].popover.bottom-right &gt; .arrow,[uib-popover-html-popup].popover.left-top &gt; .arrow,[uib-popover-html-popup].popover.left-bottom &gt; .arrow,[uib-popover-html-popup].popover.right-top &gt; .arrow,[uib-popover-html-popup].popover.right-bottom &gt; .arrow,[uib-popover-template-popup].popover.top-left &gt; .arrow,[uib-popover-template-popup].popover.top-right &gt; .arrow,[uib-popover-template-popup].popover.bottom-left &gt; .arrow,[uib-popover-template-popup].popover.bottom-right &gt; .arrow,[uib-popover-template-popup].popover.left-top &gt; .arrow,[uib-popover-template-popup].popover.left-bottom &gt; .arrow,[uib-popover-template-popup].popover.right-top &gt; .arrow,[uib-popover-template-popup].popover.right-bottom &gt; .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prisijunkite prie sąskaitos - Paysera</title>
+    <meta name="description" content="Greičiausias būdas siųsti ir gauti pinigus visame pasaulyje, keisti valiutą bei surinkti įmokas internetu, SMS žinutėmis." />
+    <link rel="canonical" href="https://www.paysera.lt/lt/login" />
+    <meta name="og:url" content="https://www.paysera.com" />
+    <meta name="og:title" content="Prisijunkite prie sąskaitos" />
+    <meta name="og:image" content="https://bank.paysera.com/assets/image/paysera_red.jpg" />
+    <meta name="og:description" content="Greičiausias būdas siųsti ir gauti pinigus visame pasaulyje, keisti valiutą bei surinkti įmokas internetu, SMS žinutėmis." />
+    <meta name="google-site-verification" content="wMEJp_52_bQbRxY0gc6sVBaigtfeVK6MC9XHVoBPdoo" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+    <script type="text/javascript" async="" defer="" src="//analytics.paysera.com/piwik.js"></script><script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.paysera.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+            <link rel="stylesheet" href="https://bank.paysera.com/js/compiled/user_common.2cc027b4ac1e1547b910.css" />
+    
+                <link rel="stylesheet" href="https://bank.paysera.com/js/compiled/plain-ffa69845b806ac86ff3d5802dad5424c715ce8f3.3b86ddd5f4fdf4a1bf25.css" />
+    
+    <!--[if lte IE 9]>
+    <script src="https://bank.paysera.com/assets/js/json2.min.js"></script>
+    <script src="https://bank.paysera.com/assets/bower/es5-shim/es5-shim.min.js"></script>
+    <script src="https://bank.paysera.com/assets/bower/respond/src/respond.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" charset="utf-8" async="" src="https://bank.paysera.com/js/compiled/212.d24d876e19cf2c0b49e4.js"></script><script async="" src="/js/support-scripts.js?unique=1533500299809"></script><script type="text/javascript" charset="utf-8" async="" src="https://bank.paysera.com/js/compiled/188.4e3c28781b444e585804.js"></script></head>
+<body class="lt layout-registration">
+                <div class="support-wrapper">
+        <div>
+            <table border="0" cellspacing="2" cellpadding="2">
+                <tbody><tr>
+                    <td align="center">
+                        <a href="https://support.paysera.com/visitor/index.php?/payseralit/LiveChat/Chat/Request/_sessionID=/_promptType=chat/_proactive=0/_filterDepartmentID=/_randomNumber=jkrd9r8dani2krc1kqfayrfku20e3rj1/_fullName=/_email=/" target="_blank" rel="noopener noreferrer" class="livechatlink">
+                            <img src="https://support.paysera.com/visitor/index.php?/payseralit/LiveChat/HTML/NoJSImage/cHJvbXB0dHlwZT1jaGF0JnVuaXF1ZWlkPTFjenZ5cWo4eXQmdmVyc2lvbj00LjYxLjAuNDI1NSZwcm9kdWN0PUZ1c2lvbiZjdXN0b21vbmxpbmU9aHR0cHMlM0ElMkYlMkZzdXBwb3J0LnBheXNlcmEuY29tJTJGX19hcHBzJTJGX2xpdmVjaGF0JTJGcGF5d2luZG93JTJGTFQlMkZvbmxpbmUucG5nJmN1c3RvbW9mZmxpbmU9aHR0cHMlM0ElMkYlMkZzdXBwb3J0LnBheXNlcmEuY29tJTJGX19hcHBzJTJGX2xpdmVjaGF0JTJGcGF5d2luZG93JTJGTFQlMkZvZmZsaW5lLnBuZyZjdXN0b21hd2F5PWh0dHBzJTNBJTJGJTJGc3VwcG9ydC5wYXlzZXJhLmNvbSUyRl9fYXBwcyUyRl9saXZlY2hhdCUyRnBheXdpbmRvdyUyRkxUJTJGYXdheS5wbmcmY3VzdG9tYmFja3Nob3J0bHk9aHR0cHMlM0ElMkYlMkZzdXBwb3J0LnBheXNlcmEuY29tJTJGX19hcHBzJTJGX2xpdmVjaGF0JTJGcGF5d2luZG93JTJGTFQlMkZhd2F5LnBuZwpmMjA2MzVjODk5MDQxZjBiMWMwZGNmYTEzNDE1NzgwOGMyM2MyMzZh" align="absmiddle" border="0" />
+                        </a>
+                    </td>
+                </tr>
+
+            </tbody></table>
+        </div>
+    </div>
+    
+            
+<div class="legacy-browser-disclaimer-wrapper">
+    <div class="legacy-browser-disclaimer">
+        Jūsų naršyklė yra nesaugi ir pasenusi, todėl gali neveikti tam tikros funkcijos.
+        <div class="pull-right">
+            <a href="https://browsehappy.com/" target="_blank" class="btn btn-primary">Atsinaujinkite naršyklę dabar</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://bank.paysera.com/js/78b2ecc.js?v=a4fc059a"></script>
+
+    <div class="main">
+            <div class="header-wrapper">
+        <div class="header container center-logo">
+            <div class="row">
+                <div class="col-sm-8">
+                    <a href="https://www.paysera.lt" class="header-link pull-left">
+                        <span class="icon"></span>
+                        Grįžti į titulinį
+                    </a>
+                </div>
+                <div class="col-sm-8">
+                                            <a class="main-logo" href="/titulinis.html"><span class="helper"> </span><img src="/uploads/images/i1xv7h2787.png" title="Į pradžią" /></a>
+                                    </div>
+                <div class="col-sm-8">
+                                                                            <a href="/lt/registration" class="header-link pull-right text-uppercase">
+        <span class="icon edit"></span>registracija
+    </a>
+
+                                                            </div>
+            </div>
+        </div>
+    </div>
+
+        
+                    <div class="content-wrapper">
+                                    <div class="content container">
+                        <div class="row">
+                            <div class="col-xs-24">
+                                                                    <div class="login-content">
+        <div class="row">
+            <div class="col-md-9 col-md-push-15">
+                <div class="form-wrapper">
+                    <div>
+                        <noscript>
+                            &lt;div class="alert alert-danger"&gt;
+                                Norėdami prisijungti turite įjungti JavaScript
+                            &lt;/div&gt;
+                        </noscript>
+
+                        <div class="alert alert-info splash">
+                            Prašome palaukti, informacija kraunasi.
+                        </div>
+
+                        <div>
+                            <paysera-authentication-form><div class="h4 heading ng-binding">PRISIJUNKITE</div>
+
+<form name="authenticationForm" data-ng-submit="vm.submit()" novalidate="novalidate" autocomplete="off" class="ng-valid-server-validation ng-dirty ng-valid-parse ng-valid ng-valid-required ng-submitted" style="">
+
+    <!-- ngIf: vm.errors.length > 0 --><div class="alert alert-danger ng-scope" data-ng-if="vm.errors.length &gt; 0" style="">
+        <!-- ngRepeat: message in vm.errors --><div data-ng-repeat="message in vm.errors" class="ng-scope">
+            <div data-ng-switch="" on="message">
+                <!-- ngSwitchWhen: forbidden -->
+                <!-- ngSwitchWhen: rate_limit_exceeded -->
+                <!-- ngSwitchWhen: internal_server_error -->
+                <!-- ngSwitchDefault:  --><div data-ng-switch-default="" class="ng-binding ng-scope">
+                    Jūsų IP adresas laikinai (60 min.) užblokuotas
+                </div><!-- end ngSwitchWhen: -->
+            </div>
+        </div><!-- end ngRepeat: message in vm.errors -->
+    </div><!-- end ngIf: vm.errors.length > 0 -->
+
+    <div class="form-group ng-isolate-scope" data-paysera-form-helper-field-has-errors="" data-field="authenticationForm.username">
+        <label class="ng-binding">El. paštas / telefono numeris</label>
+        <input type="text" name="username" class="form-control ng-valid-server-validation ng-dirty ng-valid-parse ng-valid ng-valid-required ng-touched" autofocus="autofocus" data-ng-model="vm.username" data-ng-required="true" data-paysera-form-helper-server-validation="" data-server-response="vm.serverResponse" data-property-name="'username'" required="required" style="" />
+
+        <div data-paysera-form-helper-field-error-messages="" data-field="authenticationForm.username" class="ng-isolate-scope"><!-- ngIf: vm.showErrors() -->
+</div>
+    </div>
+
+    <div class="form-group ng-isolate-scope" data-paysera-form-helper-field-has-errors="" data-field="authenticationForm.password">
+        <label data-ng-bind-html="('login.form.password')|trans:{'reminder_url': '&lt;a tabindex=\'-1\' href=' + ('paysera_password_reset_frontend.password_reset'|router) + '&gt;' + ('login.form.cannot_login'|trans) + '&lt;/a&gt;'}" class="ng-binding">Slaptažodis (<a tabindex="-1" href="/lt/reset-password">Pamiršote slaptažodį?</a>)</label>
+        <input type="password" name="password" class="form-control ng-valid-server-validation ng-dirty ng-valid-parse ng-valid ng-valid-required ng-touched" autocomplete="new-password" data-ng-model="vm.password" data-ng-required="true" data-paysera-form-helper-server-validation="" data-server-response="vm.serverResponse" data-property-name="'password'" required="required" style="" />
+
+        <div data-paysera-form-helper-field-error-messages="" data-field="authenticationForm.password" class="ng-isolate-scope"><!-- ngIf: vm.showErrors() -->
+</div>
+    </div>
+
+    <div>
+        <button type="submit" class="btn btn-primary ng-binding" data-ng-disabled="authenticationForm.$invalid || vm.processing">
+            Prisijungti
+            <span data-ng-show="vm.processing" class="ng-hide" style=""><span class="spinner"></span></span>
+        </button>
+    </div>
+</form>
+</paysera-authentication-form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-15 col-md-pull-9">
+                                    <div class="login-banner-wrapper">
+                        <div class="row">
+                            <div class="col-xs-12"><div class="h4 banner-heading">
+                                    Paysera <span class="text-primary">mobilioji programėlė</span> – dar patogesniam naudojimui
+                                </div>
+                                <p class="banner-content">Tikrinkite sąskaitos likutį, vos keliais paspaudimais atlikite bankinius pervedimus, konvertuokite valiutą, siųskite pinigų užklausas draugams ir išbandykite kitas itin patogias funkcijas su Paysera mobiliąja programėle.</p>
+
+                                <a href="https://play.google.com/store/apps/details?id=lt.lemonlabs.android.paysera" target="_blank">
+                                    <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/login-banner/google-play.png" class="banner-store-icon" alt="#" />
+                                </a>
+
+                                <a href="https://itunes.apple.com/app/paysera-mobile-wallet/id737308884" target="_blank">
+                                    <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/login-banner/app-store.png" class="banner-store-icon" alt="#" />
+                                </a>
+                            </div>
+                            <div class="col-xs-11">
+                                <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/login-banner/iphone.png" class="img-responsive pull-right" alt="#" />
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+        
+                    <div class="push"></div>
+            </div>
+
+            <div class="footer-wrapper">
+                <div class="container padded">
+        <div class="row">
+            <div class="col-md-22 col-xs-20">
+                                    <div class="row">
+<div class="col-md-12"><a class="margin-right-10" href="https://www.paysera.lt/v2/lt/sutartys/privatumo-politika">Privatumo politika</a> <a class="margin-right-10" href="https://www.paysera.com/v2/lt/sutartys">Paslaugų sutartys</a> <br /> <a class="margin-right-10" href="https://www.paysera.com/v2/lt/sutartys/saugumo-rekomendacijos">Saugaus naudojimosi rekomendacijos</a></div>
+<div class="col-md-12 text-right">Visos teisės saugomos Paysera LT, UAB. <br /> El. pinigų įstaigą prižiūri <a href="https://www.lb.lt/lt/finansu-rinku-dalyviai/paysera-lt-uab" target="_blank">Lietuvos Bankas</a>.</div>
+</div>
+                            </div>
+            <div class="col-md-2 col-xs-4">
+                <div class="language-switcher dropup">
+    <a role="button" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/user/flags/lt.gif" alt="#" class="flag" />
+        <span class="caret"></span>
+    </a>
+
+    <ul class="dropdown-menu">
+                                                            
+            <li>
+                <a href="/lt/login">
+                    <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/user/flags/lt.gif" />
+                    Lietuvių
+                </a>
+            </li>
+                                                            
+            <li>
+                <a href="/en/login">
+                    <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/user/flags/en.gif" />
+                    English
+                </a>
+            </li>
+                                                            
+            <li>
+                <a href="/ru/login">
+                    <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/user/flags/ru.gif" />
+                    Русский
+                </a>
+            </li>
+                                                            
+            <li>
+                <a href="/lv/login">
+                    <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/user/flags/lv.gif" />
+                    Latviešu
+                </a>
+            </li>
+                                                            
+            <li>
+                <a href="/pl/login">
+                    <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/user/flags/pl.gif" />
+                    Polski
+                </a>
+            </li>
+                                                            
+            <li>
+                <a href="/bg/login">
+                    <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/user/flags/bg.gif" />
+                    Български
+                </a>
+            </li>
+                                                            
+            <li>
+                <a href="/es/login">
+                    <img src="https://bank.paysera.com/assets/bundles/evptheme/img/paysera-theme/user/flags/es.gif" />
+                    Español
+                </a>
+            </li>
+            </ul>
+</div>
+            </div>
+        </div>
+    </div>
+        </div>
+    
+            <script src="https://bank.paysera.com/js/compiled/manifest.924ab83d089eb314831f.js"></script>
+    
+            <script src="https://bank.paysera.com/js/compiled/user_common.2cc027b4ac1e1547b910.js"></script>
+    
+            <script src="https://bank.paysera.com/js/compiled/base-b7e1d0a1484bdfe669acdfe9fb034bfe17fd4a2a.64f770f4b47850d4a828.js"></script>
+    
+                <script src="https://bank.paysera.com/js/compiled/plain-ffa69845b806ac86ff3d5802dad5424c715ce8f3.3b86ddd5f4fdf4a1bf25.js"></script>
+    
+                    <script src="https://bank.paysera.com/js/compiled/angular-d69ee7ddca7dd0ed3eb031c07c2aaba623e1c9e4.bfeafd7711de34fbfbe9.js"></script>
+    
+
+            <script type="text/javascript" src="https://bank.paysera.com/js/498c327.lt.js?v=4b93cb9c"></script>
+    
+            <script src="https://bank.paysera.com/js/compiled/main-cb56c1996e62d4be3399ff470ea4ab137af77310.651189aac2d56ebb054c.js"></script>
+    
+            
+    
+    <iframe src="https://tracking.paysera.com/lt/login" style="display: none;"></iframe>
+
+            <script src="https://bank.paysera.com/js/compiled/angular-bootstrap-a677f303678b2711d8a72cc3dbd13b86e88c0c14.7d2481feb56f2eee6f3f.js"></script>
+    
+            <script type="text/javascript" src="https://bank.paysera.com/js/498c327.lt.js?v=4b93cb9c"></script>
+    
+</body></html>
