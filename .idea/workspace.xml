@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f45e6dbd-214c-4870-8c00-e462774b4c81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php-test-framework.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/Helper/Acceptance.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/Helper/Acceptance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/_generated/AcceptanceTesterActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/_generated/AcceptanceTesterActions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/_support/_generated/FunctionalTesterActions.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/_support/_generated/FunctionalTesterActions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance.suite.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance.suite.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/acceptance/LoginPageCept.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/functional.suite.yml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional.suite.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/acceptance/PageContentCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/acceptance/PageContentCest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,16 +93,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/acceptance/PageContentCest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/_support/Helper/Acceptance.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -139,8 +131,8 @@
         <option value="$PROJECT_DIR$/tests/acceptance/PageLinksCest.php" />
         <option value="$PROJECT_DIR$/tests/acceptance/LoginCest.php" />
         <option value="$PROJECT_DIR$/tests/acceptance/PageContentCept.php" />
-        <option value="$PROJECT_DIR$/tests/acceptance/PageContentCest.php" />
         <option value="$PROJECT_DIR$/tests/_support/Helper/Acceptance.php" />
+        <option value="$PROJECT_DIR$/tests/acceptance/PageContentCest.php" />
       </list>
     </option>
   </component>
@@ -290,12 +282,12 @@
       <updated>1533384893766</updated>
       <workItem from="1533384898168" duration="2795000" />
       <workItem from="1533388787643" duration="30940000" />
-      <workItem from="1533548508375" duration="18000" />
+      <workItem from="1533548508375" duration="212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33753000" />
+    <option name="totallyTimeSpent" value="33947000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1273" y="0" width="1294" height="1047" extended-state="0" />
@@ -454,17 +446,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/acceptance/PageContentCest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/_support/Helper/Acceptance.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/acceptance/PageContentCest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
